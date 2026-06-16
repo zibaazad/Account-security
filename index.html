@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>امنیت حساب کاربری | مرکز امنیت</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&amp;display=swap');
+    
+    body { 
+        font-family: 'Vazirmatn', sans-serif; 
+        background: #020617; 
+        color: #e0e7ff; 
+    }
+    
+    .security-header {
+        background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+        border-bottom: 1px solid #1e2937;
+    }
+    
+    .emerald-accent {
+        color: #10b981;
+    }
+    
+    .security-card {
+        background: #0f172a;
+        border: 1px solid #1e2937;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .security-card:hover {
+        border-color: #10b981;
+        transform: translateY(-4px);
+        box-shadow: 0 20px 25px -5px rgb(16 185 129 / 0.1);
+    }
+    
+    .stat-box {
+        background: #0f172a;
+        border: 1px solid #1e2937;
+    }
+    
+    .section-title {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        right: 0;
+        width: 40%;
+        height: 2px;
+        background: linear-gradient(to left, #10b981, transparent);
+    }
+    
+    .tip-item {
+        transition: all 0.2s ease;
+    }
+    
+    .tip-item:hover {
+        background-color: #0f172a;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="security-header">
+        <div class="max-w-screen-2xl mx-auto px-8 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-emerald-900/30 rounded-2xl flex items-center justify-center border border-emerald-800">
+                        <i class="fa-solid fa-shield-halved text-emerald-400 text-3xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-3xl tracking-tight">مرکز امنیت</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 text-sm">
+                    <div class="px-4 py-2 bg-emerald-900/20 text-emerald-400 rounded-2xl flex items-center gap-2">
+                        <i class="fa-solid fa-check-double"></i>
+                        <span class="font-medium">امنیت سطح بالا</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="max-w-screen-2xl mx-auto px-8 pt-12 pb-8">
+        <div class="max-w-4xl">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="px-3 py-1 bg-emerald-900/30 text-emerald-400 text-xs font-medium tracking-widest rounded-full">امنیت حساب</div>
+            </div>
+            <h1 class="text-6xl font-bold tracking-tighter">امنیت حساب کاربری</h1>
+            <p class="mt-4 text-xl text-slate-300 max-w-lg">حفاظت از حساب کاربری در برابر تهدیدات دیجیتال و حفظ حریم خصوصی</p>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="max-w-screen-2xl mx-auto px-8 pb-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="stat-box rounded-3xl p-6">
+                <div class="text-emerald-400 text-sm">حساب‌های محافظت‌شده</div>
+                <div class="text-4xl font-bold mt-1">۲.۴ میلیون</div>
+            </div>
+            <div class="stat-box rounded-3xl p-6">
+                <div class="text-emerald-400 text-sm">تلاش نفوذ مسدود شده</div>
+                <div class="text-4xl font-bold mt-1">۱۸۷٬۳۴۰</div>
+            </div>
+            <div class="stat-box rounded-3xl p-6">
+                <div class="text-emerald-400 text-sm">میانگین امنیت کاربران</div>
+                <div class="text-4xl font-bold mt-1">۹۴٪</div>
+            </div>
+            <div class="stat-box rounded-3xl p-6">
+                <div class="text-emerald-400 text-sm">زمان پاسخگویی</div>
+                <div class="text-4xl font-bold mt-1">۸ دقیقه</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-screen-2xl mx-auto px-8">
+        <div class="mb-10">
+            <h2 class="section-title text-3xl font-semibold mb-8">چرا امنیت حساب مهم است؟</h2>
+			<img 
+  src="data:image/jpeg;base64,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" 
+  alt="تحلیل فرم تیم‌های اروپایی" 
+  style="width: 100%; max-width: 850px; height: 320px; object-fit: cover; display: block; margin: 24px auto; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);"
+>
+            <div class="max-w-3xl text-slate-300 leading-relaxed text-[15.5px]">
+                در دنیای امروز، حساب کاربری شما حاوی اطلاعات حساس مالی، شخصی و هویتی است. هرگونه نفوذ به حساب می‌تواند منجر به خسارات مالی، سرقت هویت و حتی مشکلات قانونی شود. 
+                پلتفرم‌های شرط‌بندی به دلیل ماهیت مالی خود، هدف جذابی برای هکرها محسوب می‌شوند. بنابراین، امنیت حساب کاربری نه تنها یک توصیه، بلکه یک ضرورت اساسی است.
+            </div>
+        </div>
+
+        <!-- Security Practices Grid -->
+        <div class="mb-12">
+            <h2 class="section-title text-3xl font-semibold mb-8">راهکارهای امنیتی پیشرفته</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                <div class="security-card rounded-3xl p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 bg-emerald-900/30 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-key text-emerald-400 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-xl">رمز عبور قوی و منحصربه‌فرد</div>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">رمز عبور باید حداقل ۱۲ کاراکتر باشد و از ترکیب حروف بزرگ، کوچک، اعداد و نمادها تشکیل شده باشد. هرگز از یک رمز عبور برای چندین سایت استفاده نکنید. استفاده از مدیر رمز عبور حرفه‌ای مانند Bitwarden یا 1Password توصیه می‌شود.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="security-card rounded-3xl p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 bg-emerald-900/30 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-mobile-screen-button text-emerald-400 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-xl">احراز هویت دو مرحله‌ای (2FA)</div>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">فعال‌سازی 2FA یکی از مؤثرترین روش‌های امنیتی است. از اپلیکیشن‌هایی مانند Google Authenticator یا Authy استفاده کنید. از روش پیامک به دلیل آسیب‌پذیری در برابر سیم‌کارت سواپینگ اجتناب ورزید.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="security-card rounded-3xl p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 bg-emerald-900/30 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-globe text-emerald-400 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-xl">بررسی فعالیت‌های مشکوک</div>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">به طور منظم وارد بخش «فعالیت‌های اخیر» حساب خود شوید. هرگونه ورود از مکان یا دستگاه ناشناس را فوراً گزارش دهید. بسیاری از پلتفرم‌ها امکان خروج از تمام دستگاه‌ها را به صورت یکجا فراهم کرده‌اند.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="security-card rounded-3xl p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 bg-emerald-900/30 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-link-slash text-emerald-400 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-xl">اجتناب از لینک‌های مشکوک</div>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">هرگز روی لینک‌های ناشناس کلیک نکنید. کلاهبرداران اغلب از طریق پیامک یا ایمیل جعلی سعی در سرقت اطلاعات ورود شما دارند. همیشه آدرس سایت را به صورت دستی وارد کنید.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="security-card rounded-3xl p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 bg-emerald-900/30 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-wifi text-emerald-400 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-xl">استفاده از VPN معتبر</div>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">هنگام اتصال به شبکه‌های عمومی مانند وای‌فای کافه‌ها و فرودگاه‌ها، حتماً از VPN استفاده کنید. این کار از شنود اطلاعات توسط افراد ناشناس جلوگیری می‌کند.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="security-card rounded-3xl p-7">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 bg-emerald-900/30 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-sync text-emerald-400 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-xl">به‌روزرسانی منظم نرم‌افزارها</div>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">همیشه مرورگر، سیستم‌عامل و اپلیکیشن‌ها را به‌روز نگه دارید. بسیاری از حملات از طریق حفره‌های امنیتی قدیمی انجام می‌شوند که با به‌روزرسانی برطرف می‌گردند.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Deep Content -->
+        <div class="security-card rounded-3xl p-10 mb-12">
+            <h3 class="text-2xl font-semibold mb-6">تهدیدات رایج و نحوه مقابله با آن‌ها</h3>
+            <div class="grid md:grid-cols-2 gap-x-10 gap-y-8 text-[15.2px] leading-relaxed text-slate-300">
+                <div>
+                    <div class="font-medium text-white mb-2">فیشینگ (Phishing)</div>
+                    <p>مهاجمان با ارسال پیام‌های جعلی سعی در سرقت اطلاعات ورود شما دارند. همیشه آدرس سایت را بررسی کنید و از وارد کردن اطلاعات در صفحات مشکوک خودداری کنید.</p>
+                </div>
+                <div>
+                    <div class="font-medium text-white mb-2">سیم‌کارت سواپینگ</div>
+                    <p>مهاجم با جعل هویت شما، سیم‌کارت را به نام خود فعال می‌کند. برای جلوگیری از این حمله، از احراز هویت دو مرحله‌ای مبتنی بر اپلیکیشن استفاده کنید.</p>
+                </div>
+                <div>
+                    <div class="font-medium text-white mb-2">نرم‌افزارهای جاسوسی</div>
+                    <p>نصب نرم‌افزارهای ناشناس می‌تواند اطلاعات شما را به سرقت ببرد. فقط از منابع معتبر اپلیکیشن نصب کنید و از آنتی‌ویروس معتبر استفاده نمایید.</p>
+                </div>
+                <div>
+                    <div class="font-medium text-white mb-2">حملات Brute Force</div>
+                    <p>مهاجمان با امتحان رمزهای عبور مختلف سعی در ورود به حساب دارند. فعال کردن قفل حساب پس از چند بار ورود ناموفق، از این حملات جلوگیری می‌کند.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Tips -->
+        <div class="max-w-3xl">
+            <h3 class="text-xl font-semibold mb-5">توصیه نهایی</h3>
+            <div class="text-slate-300 leading-relaxed">
+                امنیت حساب کاربری یک فرآیند مداوم است، نه یک اقدام یک‌باره. هر چند ماه یک‌بار رمز عبور خود را تغییر دهید، فعالیت‌های حساب را بررسی کنید و از جدیدترین روش‌های امنیتی آگاه باشید. 
+                در صورت مشاهده هرگونه فعالیت مشکوک، فوراً با پشتیبانی پلتفرم تماس بگیرید و حساب خود را موقتاً قفل کنید.
+            </div>
+        </div>
+    </div>
+
+    <div class="h-20"></div>
+</body>
+</html>
